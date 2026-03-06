@@ -1,6 +1,6 @@
 {
   "name": "@mostajs/scan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "QR/barcode scanner UI components and hooks for access control",
   "author": "Dr Hamid MADANI <drmdh@msn.com>",
   "license": "MIT",
