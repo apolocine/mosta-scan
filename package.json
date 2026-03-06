@@ -1,0 +1,64 @@
+{
+  "name": "@mostajs/scan",
+  "version": "1.0.0",
+  "description": "QR/barcode scanner UI components and hooks for access control",
+  "author": "Dr Hamid MADANI <drmdh@msn.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./components/ScannerView": {
+      "types": "./dist/components/ScannerView.d.ts",
+      "import": "./dist/components/ScannerView.js",
+      "default": "./dist/components/ScannerView.js"
+    },
+    "./components/ScanResultCard": {
+      "types": "./dist/components/ScanResultCard.d.ts",
+      "import": "./dist/components/ScanResultCard.js",
+      "default": "./dist/components/ScanResultCard.js"
+    },
+    "./hooks/useScan": {
+      "types": "./dist/hooks/useScan.d.ts",
+      "import": "./dist/hooks/useScan.js",
+      "default": "./dist/hooks/useScan.js"
+    },
+    "./lib/audio": {
+      "types": "./dist/lib/audio.d.ts",
+      "import": "./dist/lib/audio.js",
+      "default": "./dist/lib/audio.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js",
+      "default": "./dist/types/index.js"
+    }
+  },
+  "files": ["dist", "LICENSE", "README.md"],
+  "keywords": ["qr", "barcode", "scanner", "access-control", "webcam", "react", "nextjs", "mosta"],
+  "repository": { "type": "git", "url": "https://github.com/apolocine/mosta-scan" },
+  "homepage": "https://mostajs.dev/packages/scan",
+  "engines": { "node": ">=18.0.0" },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "html5-qrcode": ">=2.3.0",
+    "lucide-react": ">=0.400.0",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "html5-qrcode": "^2.3.8",
+    "lucide-react": "^0.575.0",
+    "react": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}
