@@ -1,0 +1,15 @@
+{
+  "_doc": "Manifeste de câblage pour @mostajs/scan",
+  "package": "@mostajs/scan",
+  "version": "1.0.2",
+  "type": "functional",
+
+  "menu": {
+    "name": "scanMenuContribution",
+    "from": "@mostajs/scan/lib/menu"
+  },
+
+  "i18n": [
+    { "namespace": "scan", "source": "node_modules/@mostajs/scan/i18n/fr/scan.json" }
+  ]
+}
